@@ -1,16 +1,21 @@
-@each $key, $value in $colors {
-  .btn {
-    @extend %buttons;
-  }
-  .btn-#{$key} {
-    background: $value;
-    color: $white;
-    &:hover {
-      background: darken($value, 5%);
-    }
-  }
-  button {
-    border: 0px;
-    cursor: pointer;
-  }
-}
+// @each $key, $value in $colors {
+//   .btn {
+//     @extend %buttons;
+//   }
+//   .btn-#{$key} {
+//     background: $value;
+//     color: $white;
+//     &:hover {
+//       background: darken($value, 5%);
+//     }
+//   }
+//   button {
+//     border: 0px;
+//     cursor: pointer;
+//   }
+// }
+
+/*
+ Components
+  Modal
+*/
