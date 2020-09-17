@@ -1,0 +1,45 @@
+header {
+
+  &.header {
+    height: auto;
+    width: 100%;
+    max-width: 100%;
+  }
+
+}
+
+.menu {
+
+  &-top {
+    width: 100%;
+    display: block;
+    background: $tertiary;
+
+    &_container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    &_content {
+
+      padding: 10px 10px 0;
+
+      * {
+        font-size: $fz-top-menu;
+        color: $white;
+        text-transform: uppercase;
+      }
+
+    }
+    
+    &_left {
+      padding-left: 40px;
+    }
+    &_right {
+      padding-right: 40px;
+    }
+
+  }
+
+}
