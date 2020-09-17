@@ -1,0 +1,37 @@
+#main-title {
+  background-color: lighten($tertiary, 15%);
+  background-image: 
+    url(../media/img/bg-clouds-2.png),
+    url(../media/img/bg-texture.png);
+  background-size: 105%, 100%;
+  background-position: 0rem 130%, 0rem 30%;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: auto;
+  min-height: 118vh;
+  z-index: 1;
+  .row {
+    padding: 10rem 0;
+  }
+  .w-100 {
+    text-align: center;
+    h1 {
+      font-size: $fz-h1;
+      text-transform: uppercase;
+      font-weight: $bold;
+      line-height: .5;
+      &:nth-child(1) {
+        color: $navy;
+      }
+      &:nth-child(2) {
+        color: $navy;
+      }
+      &:nth-child(3) {
+        color: $purple;
+      }
+      &:nth-child(4) {
+        color: $red;
+      }
+    }
+  }
+}
