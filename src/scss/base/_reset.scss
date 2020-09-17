@@ -26,7 +26,7 @@ body {
   /* Let's get this party started */
   &::-webkit-scrollbar {
     width: 10px;
-    background: $primary-color;
+    background: transparent;
   }
 
   /* Track */
@@ -38,11 +38,11 @@ body {
   &::-webkit-scrollbar-thumb {
     -webkit-border-radius: 10px;
     border-radius: 10px;
-    background: rgba(255,255,255,.3);
+    background: transparent;
     transition: ease .3s;
   }
   &::-webkit-scrollbar-thumb:hover {
-    background: rgba(255,255,255,.2);
+    background: transparent;
     margin-right: 3px;
     cursor: pointer;
   }
@@ -50,11 +50,11 @@ body {
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: $futura;
+  font-family: 'Muli';
 }
 
 p, span, a, blockquote, abbr, address {
-  font-family: $montserrat;
+  font-family: 'Muli';
 }
 
 input, button, img {
