@@ -1,0 +1,16 @@
+#main-home-banner {
+  background-color: lighten($tertiary, 15%);
+  background-image: 
+    url(../media/img/bg-clouds.png),
+    url(../media/img/bg-rainbow.png);
+  background-size: 
+    105% 110%,
+    40%;
+  background-repeat: no-repeat;
+  background-position: 
+    -8rem 80%,
+    bottom center;
+  width: 100%;
+  height: auto;
+  min-height: 80vh;
+}
