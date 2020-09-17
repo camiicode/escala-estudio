@@ -17,6 +17,7 @@ sass.compiler = require('node-sass');
 gulp.task('sass', function () {
     return gulp.src([
         'src/scss/**/*.scss',
+        'src/fonts/fontawesome/css/all.min.css'
     ])
     .pipe(sourcemaps.init())
     .pipe(sass({
@@ -68,16 +69,17 @@ gulp.task('images', function () {
     .pipe(gulp.dest('build/media'));
 });
 
-// gulp.task('fonts', function () {
-//     return gulp.src('src/fonts/**/*')
-//     .pipe(imagemin())
-//     .pipe(gulp.dest('build/fonts'));
-// });
+gulp.task('fonts', function () {
+    return gulp.src('src/fonts/**/*')
+    .pipe(imagemin())
+    .pipe(gulp.dest('build/fonts'));
+});
 
 gulp.task('watch', function () {
     browserSync.init({
         server: 'build'
     });
+    gulp.watch('src/fonts/**/*', gulp.series('fonts'));
     gulp.watch('src/media/**/*', gulp.series('images'));
     gulp.watch('src/scss/**/*.scss', gulp.series('sass'));
     gulp.watch('src/js/*.js', gulp.series('scripts')).on('change', browserSync.reload);
