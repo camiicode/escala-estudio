@@ -14,32 +14,69 @@ header {
     width: 100%;
     display: block;
     background: $tertiary;
-
     &_container {
       display: flex;
       justify-content: space-between;
       align-items: center;
     }
-
     &_content {
-
-      padding: 10px 10px 0;
-
+      padding: 20px 10px 10px;
       * {
         font-size: $fz-top-menu;
         color: $white;
         text-transform: uppercase;
       }
-
-    }
-    
+    }    
     &_left {
       padding-left: 40px;
     }
     &_right {
       padding-right: 40px;
     }
-
   }
 
+  &-bottom {
+    @extend .menu-top;
+    background: #fff;
+    // box-shadow: $header-shadow;
+    &_container {
+      @extend .menu-top_container;
+      list-style: none;
+    }
+    &_logo {
+      position: relative;
+      width: 20%;
+      .menu-bottom_item {
+        position: absolute;
+        top: 39px;
+        left: 15%;
+        width: 100%;
+        min-width: 250px;
+        min-height: 250px;
+        height: auto;
+        background: $white;
+        padding: 0 20px;
+        text-align: center;
+        border-bottom-left-radius: 250px;
+        border-bottom-right-radius: 250px;
+      }
+    }
+    &_item {
+      display: inline-block;
+      padding: 20px 15px;
+      &:last-child {
+        padding: 20px 50px;
+      }
+      &--link {
+        text-decoration: none;
+        text-transform: uppercase;
+        font-weight: $bold;
+        color: $black;
+        padding: 20px 15px;
+        > span {
+          font-size: $fz-menu;
+        }
+      } 
+    }
+  }
 }
