@@ -1,0 +1,101 @@
+* {
+  box-sizing: border-box;
+}
+body, html {
+  width: 100%;
+}
+.container {
+  width: 80%;
+  max-width: 1200px;
+  overflow-x: hidden;
+  margin: 0 auto;
+  padding: 0;
+  @media screen and (max-width: 768px) {
+    width: 90%;
+  }
+  @media screen and (max-width: 420px) {
+    width: 100%;
+  }
+  &-fluid {
+    width: 100%;
+    margin: 0 auto;
+    padding: 0;
+    overflow-x: hidden;
+  }
+  &-stretch {
+    width: 50%;
+    max-width: 700px;
+    overflow-x: hidden;
+    margin: 0 auto;
+    padding: 0;
+    @media screen and (max-width: 768px) {
+      width: 60%;
+    }
+    @media screen and (max-width: 420px) {
+      width: 70%;
+    }
+  }
+}
+.row {
+  width: 100%;
+  overflow-x: hidden;
+  display: flex;
+  flex-wrap: wrap;
+}
+@for $i from 1 through 20 {
+  .w-#{$i * 5} {
+    flex: 0 0 ($i * 4.75%);
+    width: $i * 4.95%;
+    margin: 0 auto;
+  }
+}
+
+@media only screen and (min-width: 576px)  {
+  @for $i from 1 through 20 {
+    .w-xs-#{$i * 5} {
+      flex: 0 0 ($i * 4.75%);
+      width: $i * 4.95%;
+      margin: 0 auto;
+    }
+  }
+}
+
+@media screen and (min-width: 768px) {
+  @for $i from 1 through 20 {
+    .w-md-#{$i * 5} {
+      flex: 0 0 ($i * 4.75%);
+      width: $i * 4.95%;
+      margin: 0 auto;
+    }
+  }
+}
+
+@media (min-width: 992px) {
+  @for $i from 1 through 20 {
+    .w-lg-#{$i * 5} {
+      flex: 0 0 ($i * 4.75%);
+      width: $i * 4.95%;
+      margin: 0 auto;
+    }
+  }
+}
+
+@media (min-width: 1200px) {
+  @for $i from 1 through 20 {
+    .w-xl-#{$i * 5} {
+      flex: 0 0 ($i * 4.75%);
+      width: $i * 4.95%;
+      margin: 0 auto;
+    }
+  }
+}
+
+@media (min-width: 1600px) {
+  @for $i from 1 through 20 {
+    .w-xxl-#{$i * 5} {
+      flex: 0 0 ($i * 4.75%);
+      width: $i * 4.75%;
+      margin: 0 auto;
+    }
+  }
+}
