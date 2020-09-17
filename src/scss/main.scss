@@ -12,13 +12,24 @@
 
 // components
 @import "components/buttons";
+<<<<<<< HEAD
+@import "components/dividers";
+=======
 @import "components/modal";
+>>>>>>> 80765bde56df41ea85f9467c6d5576fbb61cd1a2
 
 // layout
 @import "layout/footer";
 @import "layout/forms";
 @import "layout/flex-grid";
 
+<<<<<<< HEAD
+// Partials
+@import "partials/jumbotron";
+@import "partials/title";
+@import "partials/services";
+=======
 // Pages
 @import "pages/generator";
 @import "pages/home";
+>>>>>>> 80765bde56df41ea85f9467c6d5576fbb61cd1a2

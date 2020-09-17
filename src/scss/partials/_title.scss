@@ -1,0 +1,80 @@
+#main-title {
+  background-color: lighten($tertiary, 15%);
+  background-image: 
+    url(../media/img/bg-clouds-2.png),
+    url(../media/img/bg-circles.png),
+    url(../media/img/bg-waves.png),
+    url(../media/img/bg-texture.png);
+  background-size: 
+    105%, 
+    65%, 
+    100%;
+  background-position: 
+    0rem -9rem, 
+    center 82em, 
+    0rem 70em, 
+    0rem 30%;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: auto;
+  z-index: 1;
+  .row {
+    padding: 10rem 0;
+  }
+  .w-100 {
+    text-align: center;
+    h1 {
+      font-size: $fz-h1;
+      text-transform: uppercase;
+      font-weight: $bold;
+      line-height: .5;
+      &:nth-child(1) {
+        color: $navy;
+      }
+      &:nth-child(2) {
+        color: $navy;
+      }
+      &:nth-child(3) {
+        color: $purple;
+      }
+      &:nth-child(4) {
+        color: $red;
+      }
+    }
+  }
+  .our-values {
+    background: transparent;
+    padding: 25rem 0 0 0;
+    .row {
+      align-items: center;
+    }
+    &_item {
+      margin-top: 10rem;
+      h2 {
+        font-size: $fz-h2;
+        color: $white;
+        text-transform: uppercase;
+      }
+      &:nth-child(1) {
+        text-align: right;
+      }
+    }
+  }
+  .circle {
+    position: absolute;
+    border-radius: 50%;
+    &.small {
+      width: 40px;
+      height: 40px;
+    }
+    &.large {
+      width: 60px;
+      height: 60px;
+    }
+  }
+  .circle:nth-child(1) {
+    top: 1rem;
+    left: 1rem;
+    background: $pink;
+  }
+}
